@@ -34,6 +34,9 @@ ENV/
 # Claude Code
 .claude/
 
+# Private docs
+tech_design.md
+
 # Node
 node_modules/
 npm-debug.log*

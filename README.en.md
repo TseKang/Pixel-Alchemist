@@ -145,7 +145,6 @@ Pixel-Alchemist/
 │   │   └── config.py          # Configuration management
 │   └── .env.example           # Environment variable template
 ├── requirement.md             # Requirements doc (Chinese)
-├── tech_design.md             # Technical design doc (Chinese)
 └── README.md
 ```
 

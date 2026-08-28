@@ -144,7 +144,6 @@ Pixel-Alchemist/
 │   │   └── config.py          # 配置管理
 │   └── .env.example           # 环境变量模板
 ├── requirement.md             # 需求文档
-├── tech_design.md             # 技术设计文档
 └── README.md
 ```
 
