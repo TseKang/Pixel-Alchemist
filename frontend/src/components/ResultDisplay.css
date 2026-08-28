@@ -1,0 +1,204 @@
+.result-display {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  padding: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  min-height: 200px;
+}
+
+.result-display.empty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.placeholder {
+  text-align: center;
+  color: #666;
+}
+
+.placeholder-icon {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.result-display.loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.loading-spinner {
+  width: 40px;
+  height: 40px;
+  border: 3px solid rgba(255, 255, 255, 0.1);
+  border-top-color: #e94560;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.loading-hint {
+  color: #666;
+  font-size: 0.85rem;
+}
+
+.result-display.error {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.error-message {
+  color: #e94560;
+}
+
+.result-display.completed h3 {
+  margin-bottom: 1.5rem;
+  color: #4ade80;
+}
+
+.result-section {
+  margin-bottom: 1.5rem;
+}
+
+.result-section h4 {
+  margin-bottom: 0.75rem;
+  color: #aaa;
+  font-size: 0.95rem;
+}
+
+.sprite-preview {
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  padding: 1rem;
+  overflow-x: auto;
+}
+
+.sprite-image {
+  max-width: 100%;
+  height: auto;
+  image-rendering: pixelated;
+}
+
+.frames-grid {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.frame-item {
+  width: 96px;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.25rem;
+}
+
+.frame-image {
+  width: 88px;
+  height: 88px;
+  object-fit: contain;
+  image-rendering: pixelated;
+  border-radius: 4px;
+}
+
+.frame-label {
+  font-size: 0.7rem;
+  color: #888;
+}
+
+.palette {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.color-swatch {
+  width: 60px;
+  height: 60px;
+  border-radius: 8px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 0.25rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.color-hex {
+  font-size: 0.65rem;
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 0.1rem 0.25rem;
+  border-radius: 3px;
+}
+
+.params {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 0.75rem;
+}
+
+.param {
+  background: rgba(0, 0, 0, 0.2);
+  padding: 0.5rem 0.75rem;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.param-label {
+  color: #888;
+  font-size: 0.85rem;
+}
+
+.param-value {
+  color: white;
+  font-weight: 500;
+  font-size: 0.85rem;
+}
+
+.download-actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.download-btn {
+  flex: 1;
+  min-width: 180px;
+  padding: 0.75rem 1.5rem;
+  background: linear-gradient(90deg, #e94560, #533483);
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.download-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 20px rgba(233, 69, 96, 0.4);
+}
+
+.download-btn.secondary {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.download-btn.secondary:hover {
+  background: rgba(255, 255, 255, 0.15);
+}

@@ -1,0 +1,119 @@
+.action-input {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  padding: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.action-input h3 {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.input-group textarea {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 8px;
+  padding: 0.75rem;
+  color: white;
+  font-size: 1rem;
+  resize: vertical;
+  font-family: inherit;
+}
+
+.input-group textarea:focus {
+  outline: none;
+  border-color: #e94560;
+}
+
+.input-group textarea::placeholder {
+  color: #666;
+}
+
+.presets {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+  align-items: center;
+}
+
+.presets-label {
+  color: #888;
+  font-size: 0.85rem;
+}
+
+.preset-btn {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #ccc;
+  padding: 0.25rem 0.6rem;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 0.8rem;
+  transition: all 0.2s;
+}
+
+.preset-btn:hover {
+  background: rgba(233, 69, 96, 0.2);
+  border-color: #e94560;
+  color: white;
+}
+
+.options-row {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+.option-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.option-group label {
+  color: #888;
+  font-size: 0.8rem;
+}
+
+.option-group select {
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 6px;
+  padding: 0.4rem 0.75rem;
+  color: white;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.option-group select:focus {
+  outline: none;
+  border-color: #e94560;
+}
+
+.generate-btn {
+  width: 100%;
+  margin-top: 1.25rem;
+  padding: 0.875rem;
+  background: linear-gradient(90deg, #e94560, #533483);
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.generate-btn:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 20px rgba(233, 69, 96, 0.4);
+}
+
+.generate-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
